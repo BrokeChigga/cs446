@@ -1,0 +1,46 @@
+test_conditional (test_model.ModelTests) ... ok
+test_io (test_model.ModelTests) ... ok
+test_maximization (test_model.ModelTests) ... FAIL
+test_posterior (test_model.ModelTests) ... ok
+test_prediction (test_model.ModelTests) ... FAIL
+
+======================================================================
+FAIL: test_maximization (test_model.ModelTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/cs446grader/autograder/mp9_programming/submissions/ryang28/tests_autograder/test_model.py", line 48, in test_maximization
+    np.testing.assert_array_almost_equal(new_mu, train_data, decimal=0)
+  File "/home/cs446grader/grading_env/lib/python3.4/site-packages/numpy/testing/nose_tools/utils.py", line 963, in assert_array_almost_equal
+    precision=decimal)
+  File "/home/cs446grader/grading_env/lib/python3.4/site-packages/numpy/testing/nose_tools/utils.py", line 779, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not almost equal to 0 decimals
+
+(mismatch 100.0%)
+ x: array([[5, 5],
+       [4, 4]])
+ y: array([[10, 10],
+       [ 0,  0]])
+
+======================================================================
+FAIL: test_prediction (test_model.ModelTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/cs446grader/autograder/mp9_programming/submissions/ryang28/tests_autograder/test_model.py", line 53, in test_prediction
+    np.testing.assert_array_equal(predictions, self.train_label)
+  File "/home/cs446grader/grading_env/lib/python3.4/site-packages/numpy/testing/nose_tools/utils.py", line 855, in assert_array_equal
+    verbose=verbose, header='Arrays are not equal')
+  File "/home/cs446grader/grading_env/lib/python3.4/site-packages/numpy/testing/nose_tools/utils.py", line 779, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+(mismatch 50.0%)
+ x: array([0, 0])
+ y: array([1, 0])
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.091s
+
+FAILED (failures=2)

@@ -1,0 +1,13 @@
+test_compute_target_q1 (test_autograder.QlearningTest) ... ok
+test_compute_target_q2 (test_autograder.QlearningTest) ... ok
+test_get_action_index1 (test_autograder.QlearningTest) ... ok
+test_get_action_index2 (test_autograder.QlearningTest) ... ok
+test_run_selected_action1 (test_autograder.QlearningTest) ... ok
+test_run_selected_action2 (test_autograder.QlearningTest) ... ok
+test_scale_down_epsilon1 (test_autograder.QlearningTest) ... ok
+test_scale_down_epsilon2 (test_autograder.QlearningTest) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.070s
+
+OK
